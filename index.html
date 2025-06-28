@@ -4,55 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jumacro Software Services Pvt Ltd</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #1a1a1a;
+      font-family: 'Fira Code', monospace;
+      background-color: #1e1e1e;
+      color: #d4d4d4;
       scroll-behavior: smooth;
     }
     header {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      flex-direction: column;
-      padding: 2rem;
-      background: #fff;
+      padding: 1rem 2rem;
+      background-color: #fef6e5;
     }
-    header img {
-      max-width: 150px;
-      margin-bottom: 1rem;
+    header .logo-tagline {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img.logo {
+      max-width: 60px;
+    }
+    header .tagline {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #2c2c2c;
+    }
+    .header-links {
+      display: flex;
+      gap: 1rem;
+    }
+    .header-links a {
+      color: #2c2c2c;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    .banner-container {
+      width: 100%;
+      background-color: #fef6e5;
     }
     .banner {
       width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
+      height: auto;
+      max-height: 400px;
       display: block;
+      object-fit: contain;
+      object-position: center;
     }
     nav {
       background: #101010;
-      padding: 1rem;
+      padding: 0.8rem;
       text-align: center;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 1rem;
+      margin: 0 0.8rem;
       font-weight: bold;
     }
     section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
+      padding: 0.8rem 1rem;
+      max-width: 960px;
+      margin: 1rem auto;
+      background-color: #1e1e1e;
+      border-radius: 4px;
+      box-shadow: 0 0 4px #000 inset;
     }
     h2 {
       margin-top: 0;
+      color: #4ec9b0;
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
       background: #101010;
       color: #fff;
     }
@@ -60,17 +88,58 @@
       color: #fff;
       margin: 0 0.5rem;
     }
+    .card {
+      background: #2d2d2d;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 3px solid #569cd6;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 3px solid #808080;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #9cdcfe;
+    }
+    img.diagram {
+      width: 100%;
+      max-height: 320px;
+      object-fit: contain;
+      margin-top: 1rem;
+      border: 1px solid #444;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Jumacro Logo" />
-    <img class="banner" src="assets/banner1.png" alt="Jumacro Banner" />
+    <div class="logo-tagline">
+      <img src="assets/logo.png" alt="Jumacro Logo" class="logo" />
+      <div class="tagline">Pioneering the Next Scale of Intelligence</div>
+    </div>
+    <div class="header-links">
+      <a href="https://github.com/jumacro" target="_blank" title="Company GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/mithun-das" target="_blank" title="Mithun's GitHub"><i class="fab fa-github-alt"></i></a>
+      <a href="https://in.linkedin.com/company/jumacro-software-services-pvt-ltd-" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
   </header>
+
+  <div class="banner-container">
+    <img class="banner" src="assets/banner1.png" alt="Jumacro Banner" />
+  </div>
+
   <nav>
     <a href="#about">About</a>
     <a href="#vision">Vision</a>
     <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
     <a href="#links">Links</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
@@ -78,20 +147,47 @@
 
   <section id="about">
     <h2>About Jumacro</h2>
-    <p>Jumacro Software Services Pvt Ltd architects intelligent ecosystems using AI/ML and IoT technologies. We believe in engineering life-scale intelligence—building solutions that think, adapt, and scale with life itself.</p>
+    <div class="card">
+      <p>Jumacro Software Services Pvt Ltd architects intelligent ecosystems using AI/ML and IoT technologies. We believe in engineering life-scale intelligence—building solutions that think, adapt, and scale with life itself.</p>
+    </div>
   </section>
 
   <section id="vision">
     <h2>Our Vision</h2>
-    <p>We envision a future where technology resonates with human intuition and ecological balance. Our mission is to merge conscious AI with the real-world needs of people, society, and the planet.</p>
+    <div class="card">
+      <p>We envision a future where technology resonates with human intuition and ecological balance. Our mission is to merge conscious AI with the real-world needs of people, society, and the planet.</p>
+    </div>
   </section>
 
   <section id="research">
-  <h2>Research</h2>
-  <p><strong>Quantum Consciousness</strong>: Exploring the intersection of quantum theory and emotional intelligence. A thought experiment on entangled identities and superposed love.</p>
-  <img src="assets/quantum-consciousness-diagram.png" alt="Quantum Consciousness Diagram" style="max-width: 100%; margin-top: 1rem; border: 1px solid #ddd; border-radius: 8px;">
-  <p><a href="https://mithundas.github.io" target="_blank">Read more on GitHub Pages →</a></p>
-</section>
+    <h2>Research</h2>
+    <div class="card">
+      <p><strong>Quantum Consciousness</strong>: Exploring the intersection of quantum theory and emotional intelligence. A thought experiment on entangled identities and superposed love.</p>
+      <img src="assets/quantum-consciousness-diagram.png" alt="Quantum Consciousness Diagram" class="diagram">
+      <p><a href="https://mithundas.github.io" target="_blank">Read more on GitHub Pages →</a></p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Paynthr</strong> – AI-powered accounting platform (US) – OCR integrator for Chris Marcelli, Mike Scharnhost</li>
+        <li><strong>Electroop</strong> – Charge Point Management System (Turkey) – Mobile app and dashboard for manufacturers, revenue and employee management – Product owned by Cagri & Cagatay Yeni</li>
+        <li><strong>Society Pilot</strong> – All-purpose society automation tool with OCR-based bank reconciliation – Co-founded with Dinesh Panchal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Automated AWS Architecture Framework</strong> – Designed for Dexbytes Infotech Pvt Ltd to simplify managing large-scale distributed systems.</li>
+        <li><strong>AWS Textract Dispatcher Framework</strong> – Built for Paynthr to process over 10,000 documents/client/day affordably and scalably.</li>
+      </ul>
+    </div>
+  </section>
 
   <section id="links">
     <h2>Links</h2>
@@ -105,13 +201,15 @@
 
   <section id="testimonials">
     <h2>Testimonials</h2>
-    <blockquote>"Jumacro blends visionary thought with precision execution." – Derya Yinanc</blockquote>
-    <blockquote>"Our partnership with Jumacro in building the Paynthr platform was a turning point — truly world-class execution." – Chris Marcelli</blockquote>
-    <blockquote>"Jumacro delivered beyond expectations on the Paynthr OCR system. Mithun is now not just a collaborator but a business partner." – Mike Scharnhost</blockquote>
-    <blockquote>"Collaborating with Jumacro was seamless and inspiring. Their systems thinking and technical clarity exceeded expectations." – Cagri Yeni, Localghost</blockquote>
-    <blockquote>"Highly dependable and exceptionally talented – Jumacro delivers clean, scalable AI-first solutions every time." – Cagatay Yeni, Electroop</blockquote>
-    <blockquote>"Jumacro helped transform our vision into a functional, scalable society automation system and OCR engine for Indian banks." – Dinesh Panchal, Dexbytes Infotech Pvt Ltd</blockquote>
-    <blockquote>"PinpointMedia Design was proud to work with Jumacro. Their creative edge and technical backbone are unmatched." – Henning Geiler, PinpointMedia Design</blockquote>
+    <div class="card">
+      <blockquote>"Jumacro blends visionary thought with precision execution." – Derya Yinanc</blockquote>
+      <blockquote>"Our partnership with Jumacro in building the Paynthr platform was a turning point — truly world-class execution." – Chris Marcelli</blockquote>
+      <blockquote>"Jumacro delivered beyond expectations on the Paynthr OCR system. Mithun is now not just a collaborator but a business partner." – Mike Scharnhost</blockquote>
+      <blockquote>"Collaborating with Jumacro was seamless and inspiring. Their systems thinking and technical clarity exceeded expectations." – Cagri Yeni, Localghost</blockquote>
+      <blockquote>"Highly dependable and exceptionally talented – Jumacro delivers clean, scalable AI-first solutions every time." – Cagatay Yeni, Electroop</blockquote>
+      <blockquote>"Jumacro helped transform our vision into a functional, scalable society automation system and OCR engine for Indian banks." – Dinesh Panchal, Dexbytes Infotech Pvt Ltd</blockquote>
+      <blockquote>"PinpointMedia Design was proud to work with Jumacro. Their creative edge and technical backbone are unmatched." – Henning Geiler, PinpointMedia Design</blockquote>
+    </div>
   </section>
 
   <section id="contact">
