@@ -3,95 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jumacro Software Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>Jumacro Software Services Pvt Ltd</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
   <style>
     body {
-      font-family: 'Roboto Mono', monospace;
-      background-color: #0e0e0e;
-      color: #e0e0e0;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
     }
     header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       padding: 2rem;
+      background: #fff;
+    }
+    header img {
+      max-width: 150px;
+      margin-bottom: 1rem;
+    }
+    .banner {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: block;
+    }
+    nav {
+      background: #101010;
+      padding: 1rem;
       text-align: center;
-      background: #1a1a1a;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #33ffcc;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    main {
-      padding: 2rem;
+    section {
+      padding: 4rem 2rem;
       max-width: 1000px;
       margin: auto;
     }
-    section {
-      margin-bottom: 2.5rem;
-    }
     h2 {
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.3rem;
-      color: #00ffcc;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 0.6rem 0;
-    }
-    a {
-      color: #66ffe6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      margin-top: 0;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #aaa;
+      padding: 2rem;
+      background: #101010;
+      color: #fff;
+    }
+    .socials a {
+      color: #fff;
+      margin: 0 0.5rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Jumacro Software Services Pvt. Ltd.</h1>
-    <p>AI-Driven Products · Smart Systems · Nature-Aligned Innovation</p>
+    <img src="assets/logo.png" alt="Jumacro Logo" />
+    <img class="banner" src="assets/banner1.png" alt="Jumacro Banner" />
   </header>
-  <main>
-    <section>
-      <h2>🚀 Active Projects</h2>
-      <ul>
-        <li><strong>Paynthr OCR Pipeline</strong> – High-performance serverless document processing engine (private repo)</li>
-        <li><strong>Smart Society Dashboard</strong> – Modular platform for residential automation and green energy (in progress)</li>
-      </ul>
-    </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#links">Links</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-      <h2>🌐 Vision & Philosophy</h2>
-      <p>Jumacro designs systems that bring together the best of Artificial Intelligence and Natural Intelligence. We believe that scalable technology must respect ecology, human emotion, and emergent social structures.</p>
-    </section>
+  <section id="about">
+    <h2>About Jumacro</h2>
+    <p>Jumacro Software Services Pvt Ltd architects intelligent ecosystems using AI/ML and IoT technologies. We believe in engineering life-scale intelligence—building solutions that think, adapt, and scale with life itself.</p>
+  </section>
 
-    <section>
-      <h2>📫 Contact Us</h2>
-      <ul>
-        <li>Email: <a href="mailto:contact@jumacro.com">contact@jumacro.com</a></li>
-        <li>Website: <a href="https://jumacro.com" target="_blank">jumacro.com</a></li>
-        <li>GitHub: <a href="https://github.com/jumacro" target="_blank">@jumacro</a></li>
-      </ul>
-    </section>
-  </main>
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>We envision a future where technology resonates with human intuition and ecological balance. Our mission is to merge conscious AI with the real-world needs of people, society, and the planet.</p>
+  </section>
+
+  <section id="links">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/jumacro" target="_blank">GitHub (Company)</a></li>
+      <li><a href="https://github.com/mithun-das" target="_blank">GitHub (Mithun Das)</a></li>
+      <li><a href="https://in.linkedin.com/company/jumacro-software-services-pvt-ltd-" target="_blank">LinkedIn (Company)</a></li>
+      <li><a href="https://mithundas.github.io" target="_blank">Research & Papers</a></li>
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>"Jumacro blends visionary thought with precision execution." – Derya Yinanc</blockquote>
+    <blockquote>"Our partnership with Jumacro in building the Paynthr platform was a turning point — truly world-class execution." – Chris Marcelli</blockquote>
+    <blockquote>"Jumacro delivered beyond expectations on the Paynthr OCR system. Mithun is now not just a collaborator but a business partner." – Mike Scharnhost</blockquote>
+    <blockquote>"Collaborating with Jumacro was seamless and inspiring. Their systems thinking and technical clarity exceeded expectations." – Cagri Yeni, Localghost</blockquote>
+    <blockquote>"Highly dependable and exceptionally talented – Jumacro delivers clean, scalable AI-first solutions every time." – Cagatay Yeni, Electroop</blockquote>
+    <blockquote>"Jumacro helped transform our vision into a functional, scalable society automation system and OCR engine for Indian banks." – Dinesh Panchal, Dexbytes Infotech Pvt Ltd</blockquote>
+    <blockquote>"PinpointMedia Design was proud to work with Jumacro. Their creative edge and technical backbone are unmatched." – Henning Geiler, PinpointMedia Design</blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Email: <a href="mailto:mithun@jumacro.com">mithun@jumacro.com</a></p>
+    <p>Phone: +91-9836810493</p>
+  </section>
+
   <footer>
-    &copy; 2025 Jumacro Software Services Pvt. Ltd.
+    <p>© 2025 Jumacro Software Services Pvt Ltd. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://in.linkedin.com/company/jumacro-software-services-pvt-ltd-" target="_blank">LinkedIn</a>
+      <a href="https://github.com/jumacro" target="_blank">GitHub</a>
+    </div>
   </footer>
 </body>
 </html>
